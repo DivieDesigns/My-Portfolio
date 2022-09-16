@@ -42,5 +42,19 @@ li > a{
 }
 
 .signup{
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+.toggle span{
+  background-color: black;
+  width: 30px;
+  height: 2px;
+  cursor: pointer;
+  display: block;
+  margin-left: 15px;
+  border-radius: 20px;
+}
+
+.show{
+  display: flex;
 }
