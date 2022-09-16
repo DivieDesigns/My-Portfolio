@@ -4,3 +4,43 @@
   padding: 0;
   font-family: poppins;
 }
+
+header{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul{
+  display: flex;
+}
+
+li{
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+li > a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.signup, .login{
+  width: 90px;
+  height: 35px;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.signup{
+  margin-left: 20px;
+}
