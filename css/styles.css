@@ -45,16 +45,40 @@ li > a{
   margin-left: 10px;
 }
 
-.toggle span{
-  background-color: black;
-  width: 30px;
-  height: 2px;
-  cursor: pointer;
+/* .hamburger {
+  display: none;
+} */
+
+.bar {
   display: block;
-  margin-left: 15px;
-  border-radius: 20px;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #482ff7;
+  border-radius: 50em;
 }
 
-.show{
-  display: flex;
+
+@media screen and (max-width: 768px){
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+          opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: white;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: white;
+        width: 25px;
+    }
 }
