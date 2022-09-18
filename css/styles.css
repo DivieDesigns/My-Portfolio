@@ -45,9 +45,9 @@ li > a{
   margin-left: 10px;
 }
 
-/* .hamburger {
+.hamburger {
   display: none;
-} */
+}
 
 .bar {
   display: block;
@@ -61,10 +61,25 @@ li > a{
 }
 
 
-@media screen and (max-width: 768px){
-    .hamburger {
+@media screen and (max-width: 800px){
+
+  .show{
+    margin-right: -230px;
+  }
+
+  .nav-stuff{
+    display: block;
+    background-color: aquamarine;
+    width: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }  
+  
+  .hamburger {
         display: block;
         cursor: pointer;
+        margin-left: 100px;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -82,3 +97,21 @@ li > a{
         width: 25px;
     }
 }
+
+/* @media screen and (max-width: 570px){
+  .show{
+    margin-right: -100px;
+  }
+}
+
+@media screen and (max-width: 470px){
+  .show{
+    margin-right: -90px;
+  }
+}
+
+@media screen and (max-width: 440px){
+  .show{
+    margin-right: 0.5px;
+  }
+} */
